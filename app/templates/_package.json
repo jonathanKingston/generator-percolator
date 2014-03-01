@@ -1,0 +1,60 @@
+{
+  "name": "<%= _.slugify(appName) %>",
+  "description": "<%= description %>",
+  "homepage": "<%= homepage %>",
+  "author": {
+    "name": "<%= developerName %>",
+    "url": "<%= developerHomepage %>"
+  },
+  "repository": {
+    "type": "git",
+    "url": "<%= repo %>"
+  },
+  "version": "<%= version %>",
+  "keywords": [],
+  "dependencies": {
+  },
+  "development": {},
+  "license": "LGPL-3.0",
+  "main": "./lib/index",
+  "devDependencies": {
+    "eslint": "~0.4.0",
+    "mocha": "1.17.1",
+    "chai": "1.9.0",
+    "browserify": "3.24.8",
+    "coveralls": "2.7.1",
+    "mocha-lcov-reporter": "0.0.1",
+    "blanket": "1.1.5",
+    "mocha-jshint": "0.0.7"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "harness": "mocha",
+    "browsers": [
+      "ie/6..latest",
+      "firefox/3.5",
+      "firefox/latest",
+      "chrome/5",
+      "chrome/latest",
+      "opera/12..latest",
+      "opera/next",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
+  },
+  "config": {
+    "blanket": {
+      "pattern": "strut/lib/",
+      "data-cover-never": "node_modules"
+    }
+  }
+}
