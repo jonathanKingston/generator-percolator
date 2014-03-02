@@ -5,7 +5,7 @@
 
 ## Intro
 
-This is currently work in progress however it intentions are farily simple:
+This is currently work in progress however it intentions are fairly simple:
 
 - Create a simple quick start application for node.js and/or component
 - Provide testing out of the box
