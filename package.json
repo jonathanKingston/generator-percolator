@@ -4,12 +4,11 @@
   "description": "Yeoman generator sample JavaScript application",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "jonathanKingston/generator-percolator",
-  "author": {
-    "name": "Jonathan Kingston",
-    "email": "",
-    "url": "https://github.com/jonathanKingston"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonathanKingston/generator-percolator"
   },
+  "author": "Jonathan Kingston (https://github.com/jonathanKingston)",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -31,5 +30,12 @@
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/jonathanKingston/generator-percolator/issues"
+  },
+  "homepage": "https://github.com/jonathanKingston/generator-percolator",
+  "directories": {
+    "test": "test"
   }
 }
